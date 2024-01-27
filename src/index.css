@@ -47,7 +47,13 @@ body{
   color: green;
 }
 
+.icons:hover{
+  font-size: 30px;
+  cursor: pointer;
+}
+
 .color{
   background-color: #E1F0DA;
   background-color: #E1F0DA #D4E7C5  #BFD8AF#99BC85;
 }
+

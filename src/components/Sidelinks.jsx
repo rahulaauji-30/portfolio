@@ -1,4 +1,5 @@
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import { useState } from 'react';
 export default function Sidelinks(props){
     const [isVisible,setVisible] = useState(false)
@@ -10,7 +11,9 @@ export default function Sidelinks(props){
         <>
             <div className="sidelinks">
                 <p>{props.title}</p>
-                <ExpandMoreIcon onClick={handleVisibility} style={{cursor:"pointer"}}/>
+                {
+                    isVisible?<ExpandLessIcon onClick={handleVisibility} style={{cursor:"pointer"}}/>:<ExpandMoreIcon onClick={handleVisibility} style={{cursor:"pointer"}}/>
+                }
             </div>
             <ul className="sidelink-content" style={{display:isVisible?"none":"block"}}>
                 {
