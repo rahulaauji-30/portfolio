@@ -12,13 +12,15 @@ export default function Sidelinks(props){
                 <p>{props.title}</p>
                 <ExpandMoreIcon onClick={handleVisibility} style={{cursor:"pointer"}}/>
             </div>
-            <div className="sidelink-content" style={{display:isVisible?"none":"block"}}>
+            <ul className="sidelink-content" style={{display:isVisible?"none":"block"}}>
                 {
                     props.links.map(link=>{
-                        return <a href={link.hyper}>{link.title} </a>
+                        return <li><a href={link.hyper}>
+                        {link.title} 
+                        </a></li>
                     })
                 }
-            </div>
+            </ul>
         </>
     )
 }
