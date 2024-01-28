@@ -10,7 +10,7 @@ export default function Social() {
       style={{ display: "flex", gap: "30px", justifyContent: "center" }}
     >
       <NavLink
-        to="https://www.instagram.com"
+        to="https://www.instagram.com/rahul_aauji_30?igsh=a3Y1endvZ3BjZDJ6"
         style={{ textDecoration: "none", color: "green" }}
       >
         <InstagramIcon className="icons" color="green" />
