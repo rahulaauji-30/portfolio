@@ -10,9 +10,10 @@ export default function Navm(){
     link.click();
   };
     return(
-        <div className="navm" style={{display:"flex",justifyContent:"space-between",fontSize:"16px",marginBottom:"20px"}}>
+        <div className="navm" style={{display:"flex",justifyContent:"space-between",fontSize:"16px",marginBottom:"0px"}}>
             <NavLink to={"/"}>About</NavLink>
             <NavLink to={"projects"}>Projects</NavLink>
+            <NavLink to={"blog"}>Blogs</NavLink>
             <NavLink to={"resume"} onClick={handleDownload}>Resume</NavLink>
             <NavLink to={"contact"}>Contact</NavLink>
         </div>
